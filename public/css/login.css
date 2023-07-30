@@ -1,0 +1,83 @@
+
+body{
+    color: #ffffff;
+    background-color: #35383D;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.loginContainer{
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #272A2F;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(75, 74, 74, 0.3);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    border-radius: 3px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #dedede;
+    background-color: #f2f2f2;
+
+}
+
+.header{
+    color: #f2f2f2;
+    opacity: 90%; 
+    margin: 10px;
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1{
+    margin-top: 15px;
+}
+
+img{
+    width: 60px;
+    opacity: 90%; 
+    margin-right: 20px;
+}
+
+input[type="submit"]{
+    background-color: #7289D7;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+a {
+    color: #7289D7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(102, 99, 99);
+    text-decoration: none;
+}
+
