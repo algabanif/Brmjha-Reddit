@@ -17,8 +17,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
 const loginRoute = require('./routes/loginRoutes');
-app.use("/login", loginRoute);
+const registerRoute = require('./routes/registerRoutes');
 
+app.use("/login", loginRoute);
+app.use("/register", registerRoute);
 
 // render home and check if login by middleware => routes login 
 app.get("/", middleware.requireLogin, (req, res,next) => {
