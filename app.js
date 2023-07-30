@@ -4,7 +4,7 @@ const port = 3001;
 const middleware = require('./middleware');
 const path = require('path');
 const bodyParser = require("body-parser");
-
+const mongoose = require("./database");
 
 
 // run server at http://localhost:3001/
@@ -35,3 +35,4 @@ app.get("/", middleware.requireLogin, (req, res,next) => {
 
     res.status(200).render("home", payload);
 })
+
