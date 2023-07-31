@@ -6,6 +6,7 @@ block content
         form#regForm(method="post" , onsubmit="event.preventDefault(); validateForm();") 
 
             p.errorMessage #{errorMessage}
+            
             input#firstName(type="text",    name="firstName",   placeholder="First name", value=firstName required="")
             input#lastName( type="text",    name="lastName",    placeholder="Last name",  value=lastName required="")
             input#userName( type="text",    name="username",    placeholder="Username",   value=userName  required="")

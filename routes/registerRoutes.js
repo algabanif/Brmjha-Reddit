@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const bodyParser = require("body-parser");
+const bcrypt = require("bcrypt");
 const User  = require('../schemas/UserSchema');
 
 
@@ -42,10 +43,14 @@ router.post("/", async (req, res,next) => {
         if(user == null){
             // No user found 
             var data = req.body;
+
+            // To secure the password - 10 is encrypt the password ten times
+            data.password = await bcrypt.hash(password, 10);
             
              User.create(data)
              .then( (user) => {
-                console.log(user);
+                req.session.user = user;
+                return res.redirect("/");
              })
         } 
         else {
