@@ -1,19 +1,247 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    color: #ffffff;
-    background-color: #35383D;
+   width: 100vw;
+   height: 100vh;
     background-image: url(https://wallpaperaccess.com/full/3053366.png);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family:'whitney' ,sans-serif; 
+    text-rendering: optimizeLegibility;
+    user-select: none;
 }
 
-h1{
+::-webkit-scrollbar{
+    display: none;
+}
+
+#svgBlob{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    transition: 1s;
+}
+
+.position{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 466px;
+    max-width: 90vw;
+    padding: 32px;
+    background-color: #2a2b38;
+    background: #363940;
+    border-radius: 6px;
+    left:0;
+    top: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+}
+
+.contering-wapper{
+    width:100%;
+    text-align: center;
+    margin:0;
+    padding:0;
+    border:0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.section1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.primary-header{
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.secondary-header{
+    color: #a2a3a7;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.input-position{
+    margin-top: 20px;
+}
+
+.form-group{
+    width:100%;
+    text-align: left;
+}
+
+.input-placeholder{
+    color: #919296;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    flex: 1;
+    cursor: default;
+
+}
+
+.form-style{
+    position: relative;
+    padding: 10px;
+    height: 40px;
+    width: 400px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:22px;
+    letter-spacing: 0.5px;
+    color:#c4c3ca;
+    background-color: #28282d;
+    border: 1px solid #282a2e;
+    outline: none;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+}
+.select-style{
+    position: relative;
+    padding: 10px;
+    height: 40px;
+    width: 130px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height:22px;
+    letter-spacing: 0.5px;
+    color:#c4c3ca;
+    background-color: #28282d;
+    border: 1px solid #282a2e;
+    outline: none;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.form-style:hover{
+    border-color: #000;
+}
+
+.form-style:focus, .form-style:active{
+    border-color: #7289d9;
+}
+
+.form-style:active .input-placeholder{
     
-    color: #ffffff;
-    margin: 30px;
+    color: #7289d9;
 }
 
-p{
-    color: #ffffff;
-    margin: 30px;
+.btn-position{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.btn{
+    text-decoration: none;
+    border-radius: 4px;
+    height: 44px;
+    width: 400px;
+    margin-bottom: 10px;
+    font-size:13px;
+    font-weight: 550;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #415dc0;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    background-color: #5a6cb3;
+    box-shadow: 0 8px 24px 0 rgba(16,39,112,0.2);
+}
+
+.password-container{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 8px;
+    margin-top: 4px;
+    width:100%;
+    height: auto;
+    padding: 2px 90% 2px 0px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.link{
+    
+    text-decoration: none;
+    color:#447df8;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.register{
+    font-size: 14px;
+    color: #919296;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content:right;
+    align-items: right;
+    width: 100%;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.horizontalSeparator{
+    border: 1px solid #363940;
+    margin:0 2.5vw;
 }

@@ -1,7 +1,216 @@
 extends layouts/main-layout.pug
 
 block content
-    h1 Main Page
+    .container
+    nav
+        a(href='#')
+        img(src='https://i.ibb.co/2j7fpmV/reddit-1024x1024.png' alt='' width='35px' style='opacity: 90%; padding-right: 60px;')
+        a(href='#')
+        img.logo(src='https://i.ibb.co/dtWmbqp/1.png' alt='' width='35px' style='')
+        h2(style='font-weight: 100; padding-right: 20px; margin-left: 0px;') Home
+        a(href='#')
+        img.logo(src='https://i.ibb.co/h8tcFRw/dribbbleicons5050w.png' alt='' width='35px' style='    transform: rotate(270deg); margin-bottom: -13px;')
+        h2(style='font-weight: 100; padding-right: 20px;margin-left: 0px; ') Popular
+        a(href='#')
+        img.logo(src='https://i.ibb.co/tZ6F5mX/dribbbleicons5050.png' alt='' width='35px' style='    transform: rotate(270deg); margin-bottom: -13px;')
+        h2(style='font-weight: 100; padding-right: 20px;margin-left: 0px;') All
+        input.input(type='text' name='text' placeholder='Search Reddit')
+        button.button
+        span
+            svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' width='24' height='24')
+            path(fill='none' d='M0 0h24v24H0z')
+            path(fill='currentColor' d='M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z')
+            |  Create Post
+        a(href='messages.html')
+        img(src='https://i.ibb.co/Q99n80X/5a9f75975ced4b6392279dc850be8228.png' alt='' width='45px' style=' padding-left: 60px; margin-top: 5px;')
+        a(href='#')
+        img(src='https://i.ibb.co/d7jJw8F/profile-Icon-snoo1543e947-3960-46dc-a52b-48036d651f92-headshot.webp' alt='' width='45px' style=' padding-left: 10px;')
+    .side1
+        p(style='font-weight: 100; font-size: 250%; padding: 10px 15px 10px 15px; display: flex; background-color:rgba(243, 243, 243, 0.158); width: fit-content; border-radius: 60px; color: rgba(245, 245, 245, 0.773);') Communities
+        br
+        div(style='display:flex;    flex-direction: row-reverse;\
+        align-items: center;\
+        justify-content: flex-end; ')
+        h1(style='font-weight: 100; font-size: 170%;') r/CryptoCommunities
+        a(href='#')
+            img(src='https://styles.redditmedia.com/t5_weah5/styles/communityIcon_9k23lzdmhom21.png?width=256&s=17f94781518832251bb1011f882e7fad8f4130de' alt='' style='width: 50px; border-radius: 50%;')
+    .content1
+        div(style='display:flex;    flex-direction: row-reverse;\
+        align-items: center;\
+        justify-content: flex-end; padding-left: 10px; ')
+        h1(style='font-weight: 100; font-size: 140%; color: rgba(245, 245, 245, 0.696);') r/AskReddit
+        a(href='#')
+            img(src='https://styles.redditmedia.com/t5_2qh1i/styles/communityIcon_p6kb2m6b185b1.png?width=256&s=c28b9f038c305e139b62739f2133d7b776582696' alt='' style='width: 25px; border-radius: 50%; margin-right: 10px;')
+        a(href='#' style='color: whitesmoke;')
+        .posts
+            p Fellow Shibes...Can you help me out....
+            p(style='font-family: serif; font-size: 75%; font-weight: 100;color: rgba(245, 245, 245, 0.556); padding-top: 10px;')
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magnam voluptate tenetur quibusdam fugit tempora veritatis minima totam maxime aperiam dolorum corrupti eligendi iste quisquam, 
+            br
+            |  facilis cupiditate odit, praesentium aliquam.  Lorem ipsum dolor sit amet consectetur adipisicing elit........ Minima maxime vero ea cumque alias sed cum labore numquam adipisci tempora odio, inventore nihil repellat sequi corporis enim dolorum eum accusamus!
+    .bar1
+    div(style='position: relative; right: 50px;')
+        button(style='background-color: transparent;color: #fff;')
+        p
+            i.arrow.up(style='margin: 15px 0 2px 0 ')
+        p 15K
+        p
+            i.arrow.down
+    .side2
+    div(style=' display: flex;flex-direction: row-reverse;align-items:center')
+        h1(style='font-weight: 100; font-size: 170%;') r/dogecoin
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2zcp2/styles/communityIcon_gflpzojnfs621.png' alt='' style='width: 50px; border-radius: 50%;')
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/TrueCrimePodcasts
+        a(href='#')
+        img(src='https://b.thumbs.redditmedia.com/rwUfv0vHhJJQtn-rfVYHrJSIUJf1aZl27u9zTPRPU0w.png' alt='' style='width: 50px; border-radius: 50%;')
+    .content2
+    div(style='display:flex;    flex-direction: row-reverse;\
+    align-items: center;\
+    justify-content: flex-end; padding-left: 10px; ')
+        h1(style='font-weight: 100; font-size: 140%; color: rgba(245, 245, 245, 0.696);') r/worldnews
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2qh13/styles/communityIcon_pldiwqvsyns91.png?width=256&s=1e3f0453042ba59e08945b2beab03f408a4135e4' alt='' style='width: 25px; border-radius: 50%; margin-right: 10px;')
+    a(href='#' style='color: whitesmoke;')
+        .posts
+        p Singapore Hangs First Woman in 19 Years for 31 Grams of Heroin
+        p(style='font-family: serif; font-size: 75%; font-weight: 100;color: rgba(245, 245, 245, 0.556); padding-top: 10px;')
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magnam voluptate tenetur quibusdam fugit tempora veritatis minima totam maxime aperiam dolorum corrupti eligendi iste quisquam, 
+            br
+            |  facilis cupiditate odit, praesentium aliquam.  Lorem ipsum dolor sit amet consectetur adipisicing elit........ Minima maxime vero ea cumque alias sed cum labore numquam adipisci tempora odio, inventore nihil repellat sequi corporis enim dolorum eum accusamus!
+    .bar2
+    div(style='position: relative; right: 50px;')
+        button(style='background-color: transparent;color: #fff;')
+        p
+            i.arrow.up(style='margin: 15px 0 2px 0 ')
+        p 11K
+        p
+            i.arrow.down
+    .side3
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/todayilearned
+        a(href='#')
+        img(src='https://b.thumbs.redditmedia.com/B7IpR8P1mEsQIjdizK5x79s5aGfJUtKk3u2ksGZ9n2Q.png' alt='' style='width: 50px; border-radius: 50%;')
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/memes
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2qjpg/styles/communityIcon_x0untei1wh9b1.png?width=256&s=dfc25749f0bda28fdf57af8d92c6e91e57348af5' alt='' style='width: 50px; border-radius: 50%;')
+    .content3
+    div(style='display:flex;    flex-direction: row-reverse;\
+    align-items: center;\
+    justify-content: flex-end; padding-left: 10px; ')
+        h1(style='font-weight: 100; font-size: 140%; color: rgba(245, 245, 245, 0.696);')  r/NoStupidQuestions
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2w844/styles/communityIcon_krq4riav5m191.png' alt='' style='width: 25px; border-radius: 50%; margin-right: 10px;')
+    a(href='#' style='color: whitesmoke;')
+        .posts
+        p What&apos;s a sport men and women can compete in fairly?
+        p(style='font-family: serif; font-size: 75%; font-weight: 100;color: rgba(245, 245, 245, 0.556); padding-top: 10px;')
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magnam voluptate tenetur quibusdam fugit tempora veritatis minima totam maxime aperiam dolorum corrupti eligendi iste quisquam, 
+            br
+            |  facilis cupiditate odit, praesentium aliquam.  Lorem ipsum dolor sit amet consectetur adipisicing elit........ Minima maxime vero ea cumque alias sed cum labore numquam adipisci tempora odio, inventore nihil repellat sequi corporis enim dolorum eum accusamus!
+    .bar3
+    div(style='position: relative; right: 50px;')
+        button(style='background-color: transparent;color: #fff;')
+        p
+            i.arrow.up(style='margin: 15px 0 2px 0 ')
+        p 19K
+        p
+            i.arrow.down
+    .side4
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/pokemongo
+        a(href='#')
+        img(src='https://b.thumbs.redditmedia.com/G8vrniZg3VHg6g-cDgBOnCdlsx2TEbiSX_CRA_cRV5I.png' alt='' style='width: 50px; border-radius: 50%;')
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/DiscordAdvertising
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_3ije8/styles/communityIcon_r95av9uppgb21.jpg?width=256&format=pjpg&s=bdcec265709e61449417877d3638e6f46cfb3cdf' alt='' style='width: 50px; border-radius: 50%;')
+    .content4
+    div(style='display:flex;    flex-direction: row-reverse;\
+    align-items: center;\
+    justify-content: flex-end; padding-left: 10px; ')
+        h1(style='font-weight: 100; font-size: 140%; color: rgba(245, 245, 245, 0.696);') r/TrueUnpopularOpinion
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_lrajx/styles/communityIcon_vtgh9int5j751.png' alt='' style='width: 25px; border-radius: 50%; margin-right: 10px;')
+    a(href='#' style='color: whitesmoke;')
+        .posts
+        p
+            | Every birth should require a mandatory Paternity Test before the father is put on the Birth Certificate
+        p(style='font-family: serif; font-size: 75%; font-weight: 100;color: rgba(245, 245, 245, 0.556); padding-top: 10px;')
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magnam voluptate tenetur quibusdam fugit tempora veritatis minima totam maxime aperiam dolorum corrupti eligendi iste quisquam, 
+            br
+            |  facilis cupiditate odit, praesentium aliquam.  Lorem ipsum dolor sit amet consectetur adipisicing elit........ Minima maxime vero ea cumque alias sed cum labore numquam adipisci tempora odio, inventore nihil repellat sequi corporis enim dolorum eum accusamus!
+    .bar4
+    div(style='position: relative; right: 50px;')
+        button(style='background-color: transparent;color: #fff;')
+        p
+            i.arrow.up(style='margin: 15px 0 2px 0 ')
+        p 20K
+        p
+            i.arrow.down
+    .side5
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 160%;') r/mcservers
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2s3kg/styles/communityIcon_6030bq0rs1ia1.png' alt='' style='width: 50px; border-radius: 50%;')
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/gaming
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2qh03/styles/communityIcon_1isvxgkk7hw51.png?width=256&s=b2c4017083ea0176a3dd4837f6e009bbc8384f15' alt='' style='width: 50px; border-radius: 50%;')
+    .content5
+    div(style='display:flex;    flex-direction: row-reverse;\
+    align-items: center;\
+    justify-content: flex-end; padding-left: 10px; ')
+        h1(style='font-weight: 100; font-size: 140%; color: rgba(245, 245, 245, 0.696);') u/psy-international
+        a(href='#')
+        img(src='https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png' alt='' style='width: 25px; border-radius: 50%; margin-right: 10px;')
+    a(href='#' style='color: whitesmoke;')
+        .posts
+        p
+            | I got 132 IQ on the international IQ test. It&apos;s probably the most accurate online test. How high is your IQ?
+        // <p style="font-family: serif; font-size: 75%; font-weight: 100;color: rgba(245, 245, 245, 0.556); padding-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magnam voluptate tenetur quibusdam fugit tempora veritatis minima totam maxime aperiam dolorum corrupti eligendi iste quisquam, <br> facilis cupiditate odit, praesentium aliquam.  Lorem ipsum dolor sit amet consectetur adipisicing elit........ Minima maxime vero ea cumque alias sed cum labore numquam adipisci tempora odio, inventore nihil repellat sequi corporis enim dolorum eum accusamus!</p>
+        img(src='https://external-preview.redd.it/5Ma0LQzE0UTftE1v8cOMaYI0L1WLwq4ZdGNqSNah9Ss.jpg?width=640&crop=smart&auto=webp&s=e3e0fdd4ea3e8051bc8a1cbe5fe177052e7fbe78' alt='' style='max-width: 250px; opacity: 90%;')
+    .bar5
+    div(style='position: relative; right: 50px;')
+        button(style='background-color: transparent;color: #fff;')
+        p
+            i.arrow.up(style='margin: 15px 0 2px 0 ')
+        p 44K
+        p
+            i.arrow.down
+    .side6
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 160%;') r/conspiracy
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_36vqux/styles/communityIcon_e4vivfecm4371.png' alt='' style='width: 50px; border-radius: 50%;')
+    div(style='display: flex; flex-direction: row-reverse; align-items: center;')
+        h1(style='font-weight: 100; font-size: 170%;') r/FortNiteBR
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_3oeyf/styles/communityIcon_r1fnjc5x5lba1.png?width=256&s=10f813a28afb475117f838f19411ca6380a6b589' alt='' style='width: 50px; border-radius: 50%;')
+    .content6
+    div(style='display:flex;    flex-direction: row-reverse;\
+    align-items: center;\
+    justify-content: flex-end; padding-left: 10px; ')
+        h1(style='font-weight: 100; font-size: 140%; color: rgba(245, 245, 245, 0.696);') r/movies
+        a(href='#')
+        img(src='https://styles.redditmedia.com/t5_2qh3s/styles/communityIcon_ctrxr9h6lmbb1.jpg?width=256&s=4488e22d2e542a46ca106e877e3da6555c952630' alt='' style='width: 25px; border-radius: 50%; margin-right: 10px;')
+    a(href='#' style='color: whitesmoke;')
+        .posts
+        p
+            | What movie seems to end on a high note for the protagonists, but if you think about it they&apos;re actually pretty screwed?
+        p(style='font-family: serif; font-size: 75%; font-weight: 100;color: rgba(245, 245, 245, 0.556); padding-top: 10px;')
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magnam voluptate tenetur quibusdam fugit tempora veritatis minima totam maxime aperiam dolorum corrupti eligendi iste quisquam, 
+            br
+            |  facilis cupiditate odit, praesentium aliquam.  Lorem ipsum dolor sit amet consectetur adipisicing elit........ Minima maxime vero ea cumque alias sed cum labore numquam adipisci tempora odio, inventore nihil repellat sequi corporis enim dolorum eum accusamus!
+    .bar6
+    div(style='position: relative; right: 50px;')
+        button(style='background-color: transparent;color: #fff;')
+        p
+            i.arrow.up(style='margin: 15px 0 2px 0 ')
+        p 30K
+        p
+            i.arrow.down
 
-    p #{userLoggedIn.firstName}
     
